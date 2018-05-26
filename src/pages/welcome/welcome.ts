@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 import {GooglemapPage} from "../googlemap/googlemap";
 import {ContactsPage} from "../contacts/contacts";
 import {CameraPage} from "../camera/camera";
+
+import { AngularFireAuth } from "angularfire2/auth";
+import {LoginPage} from "../login/login";
 
 /**
  * Generated class for the WelcomePage page.
@@ -18,12 +21,32 @@ import {CameraPage} from "../camera/camera";
 })
 export class WelcomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private fire: AngularFireAuth,private alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
   }
+
+  alert(message){
+    this.alertCtrl.create({
+      title: 'Information',
+      subTitle: message,
+      buttons: ['OK']
+    }).present();
+
+  }
+
+  deconnexion(){
+    this.fire.auth.signOut()
+      .then(data => {
+        console.log('y a des data', data);
+        this.alert('Déconnexion réussie');
+        this.navCtrl.setRoot( LoginPage );
+      });
+  }
+
+
   googleMap(){
     this.navCtrl.push(GooglemapPage);
   }

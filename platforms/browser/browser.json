@@ -42,6 +42,15 @@
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-ionic": {
+      "APP_ID": "d136fd58",
+      "CHANNEL_NAME": "Master",
+      "WARN_DEBUG": "true",
+      "UPDATE_API": "https://api.ionicjs.com",
+      "UPDATE_METHOD": "background",
+      "MAX_STORE": "2",
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {},
@@ -103,6 +112,15 @@
       "id": "cordova-plugin-splashscreen.SplashScreenProxy",
       "pluginId": "cordova-plugin-splashscreen",
       "runs": true
+    },
+    {
+      "file": "plugins/cordova-plugin-ionic/www/common.js",
+      "id": "cordova-plugin-ionic.common",
+      "pluginId": "cordova-plugin-ionic",
+      "clobbers": [
+        "IonicCordova"
+      ],
+      "runs": true
     }
   ],
   "plugin_metadata": {
@@ -112,6 +130,7 @@
     "cordova-plugin-ionic-webview": "1.1.19",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-whitelist": "1.3.3",
-    "cordova-plugin-geolocation": "4.0.1"
+    "cordova-plugin-geolocation": "4.0.1",
+    "cordova-plugin-ionic": "4.1.7"
   }
 }

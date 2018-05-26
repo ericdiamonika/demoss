@@ -56,5 +56,17 @@
     "variables": {
       "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
     }
+  },
+  "cordova-plugin-ionic": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic@4.1.7"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "d136fd58",
+      "CHANNEL_NAME": "Master",
+      "UPDATE_METHOD": "background"
+    }
   }
 }

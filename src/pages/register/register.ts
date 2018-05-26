@@ -47,6 +47,6 @@ export class RegisterPage {
         this.alert(error.message);
       });
     console.log(this.password.value, this.username.value);
-}
+  }
 
 }
