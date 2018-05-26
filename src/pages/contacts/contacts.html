@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Contactez-nous</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="contact" padding>
+  <h4>Besoin d'aide ?</h4>
+  <div padding>
+    <img src="../../assets/imgs/ares-logo.png">
+  </div>
+  <div padding>
+    <button block ion-button (click)="openContact()">Voir contact</button>
+  </div>
+  <p>Contacts: {{numbers|json}}</p>
+  <div padding>
+    <button block ion-button (click)="callNumberFn()">Appeler contact</button>
+  </div>
+</ion-content>
+java -version
