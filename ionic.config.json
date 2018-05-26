@@ -1,6 +1,6 @@
 {
   "name": "demoss",
-  "app_id": "",
+  "app_id": "d136fd58",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
