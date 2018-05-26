@@ -29,7 +29,7 @@ export class LoginPage {
 
   alert(message){
     this.alertCtrl.create({
-      title: 'Bienvenue',
+      title: 'Information',
       subTitle: message,
       buttons: ['OK']
     }).present();

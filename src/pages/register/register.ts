@@ -28,7 +28,7 @@ export class RegisterPage {
 
   alert(message){
     this.alertCtrl.create({
-      title: 'Félicitations',
+      title: 'Information',
       subTitle: message,
       buttons: ['OK']
     }).present();
