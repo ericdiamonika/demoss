@@ -7,6 +7,7 @@ import {ContactsPage} from "../pages/contacts/contacts";
 import {CameraPage} from "../pages/camera/camera";
 import {GooglemapPage} from "../pages/googlemap/googlemap";
 import {WelcomePage} from "../pages/welcome/welcome";
+import {ListPage} from "../pages/list/list";
 
 
 @Component({
@@ -27,7 +28,8 @@ export class MyApp {
       { title: 'Accueil', component: WelcomePage },
       { title: 'Contact', component: ContactsPage },
       { title: 'Camera', component: CameraPage },
-      { title: 'Carte', component: GooglemapPage }
+      { title: 'Carte', component: GooglemapPage },
+      { title: 'Archives', component: ListPage }
     ];
 
   }

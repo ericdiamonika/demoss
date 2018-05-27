@@ -37,4 +37,26 @@ export class GoogleMapComponent {
     });
   }
 
+  addMarker(){
+    let marker = new google.maps.Market({
+      map: this.map,
+      animation: google.maps.Animation.DROP,
+      position: this.map.getCenter()
+    });
+
+    let content = "<h4>Vous êtes ici</h4>";
+
+    this.addInfoWindow(marker, content);
+  }
+
+  addInfoWindow(marker, content){
+    let infoWindow = new google.maps.infoWindow({
+      content: content
+    });
+
+    google.maps.event.addListener(marker, 'click',() => {
+      infoWindow.open(this.map, marker);
+    })
+  }
+
 }
