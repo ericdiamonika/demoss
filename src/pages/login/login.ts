@@ -52,7 +52,7 @@ export class LoginPage {
   }
 
   forgetPassword(){
-    window.open('https://console.firebase.google.com/u/0/project/demoss-96939/authentication/emails', '_system');
+    const browser = this.iab.create('https://console.firebase.google.com/u/0/project/demoss-96939/authentication/emails', '_self');
   }
 
 
