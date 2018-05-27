@@ -45,6 +45,9 @@
     <feature name="IonicCordovaCommon">
         <param name="ios-package" onload="true" value="IonicCordovaCommon" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
     <name>demoss</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>

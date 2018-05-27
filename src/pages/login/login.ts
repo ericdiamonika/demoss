@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { AngularFireAuth } from "angularfire2/auth";
 import {WelcomePage} from "../welcome/welcome";
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the LoginPage page.
@@ -20,7 +21,7 @@ export class LoginPage {
   @ViewChild('username') username;
   @ViewChild('password') password;
 
-  constructor(private alertCtrl: AlertController,private fire: AngularFireAuth,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private alertCtrl: AlertController,private fire: AngularFireAuth,public navCtrl: NavController, public navParams: NavParams, private iab: InAppBrowser) {
   }
 
   ionViewDidLoad() {
@@ -49,5 +50,10 @@ export class LoginPage {
       });
     console.log(this.password.value, this.username.value);
   }
+
+  forgetPassword(){
+    window.open('https://console.firebase.google.com/u/0/project/demoss-96939/authentication/emails', '_system');
+  }
+
 
 }

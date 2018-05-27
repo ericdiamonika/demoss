@@ -23,6 +23,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import {Contacts} from "@ionic-native/contacts";
 import { CallNumber } from '@ionic-native/call-number';
 import {WelcomePage} from "../pages/welcome/welcome";
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 const firebaseAuth = {
   apiKey: "AIzaSyAUc0s4FUFpYVamlGKJPYosM0aLWdNaz_M",
@@ -64,13 +65,17 @@ const firebaseAuth = {
     GoogleMapComponent,
     GooglemapPage,
     WelcomePage
+
   ],
   providers: [
     StatusBar,
-    SplashScreen, Camera,
+    SplashScreen,
     Contacts,
     CallNumber,
-    SplashScreen, Camera,Geolocation,
+    InAppBrowser,
+    SplashScreen,
+    Camera,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

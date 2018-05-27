@@ -81,6 +81,7 @@
 		E7889FD1AAB24BEBA1F979BA /* UNIHTTPStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E80008041B524CC3867C1EE0 /* UNIHTTPStringResponse.m */; };
 		97007513A2BA4F509AF5DE26 /* UNIJsonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 387155D5DF014A6E8AD978EA /* UNIJsonNode.m */; };
 		BB2D665A10784080837B8450 /* IonicCordovaCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FAB5B34BF54546BFA1E965 /* IonicCordovaCommon.m */; };
+		01A158275CB043EBB541CD7D /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 764E5DF74F0449C494BC5DC8 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +262,8 @@
 		4B27B1B5F8154B2DA3F54DD3 /* UNIHTTPStringResponse.h */ = {isa = PBXFileReference; name = "UNIHTTPStringResponse.h"; path = "cordova-plugin-ionic/UNIHTTPStringResponse.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		FFA04D31CF8A42B0A3CD9354 /* UNIJsonNode.h */ = {isa = PBXFileReference; name = "UNIJsonNode.h"; path = "cordova-plugin-ionic/UNIJsonNode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		B84BD4D255AE443FB49BA14B /* IonicCordovaCommon.h */ = {isa = PBXFileReference; name = "IonicCordovaCommon.h"; path = "cordova-plugin-ionic/IonicCordovaCommon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		764E5DF74F0449C494BC5DC8 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D003B298463E4328B8C169B3 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +506,8 @@
 				4B27B1B5F8154B2DA3F54DD3 /* UNIHTTPStringResponse.h */,
 				FFA04D31CF8A42B0A3CD9354 /* UNIJsonNode.h */,
 				B84BD4D255AE443FB49BA14B /* IonicCordovaCommon.h */,
+				764E5DF74F0449C494BC5DC8 /* CDVInAppBrowser.m */,
+				D003B298463E4328B8C169B3 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = demoss/Plugins;
@@ -693,6 +698,7 @@
 				E7889FD1AAB24BEBA1F979BA /* UNIHTTPStringResponse.m in Sources */,
 				97007513A2BA4F509AF5DE26 /* UNIJsonNode.m in Sources */,
 				BB2D665A10784080837B8450 /* IonicCordovaCommon.m in Sources */,
+				01A158275CB043EBB541CD7D /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
