@@ -392,7 +392,7 @@ var LoginPage = /** @class */ (function () {
         console.log(this.password.value, this.username.value);
     };
     LoginPage.prototype.forgetPassword = function () {
-        var browser = this.iab.create('https://console.firebase.google.com/u/0/project/demoss-96939/authentication/emails', '_self');
+        this.iab.create('https://console.firebase.google.com/u/0/project/demoss-96939/authentication/emails', '_self');
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('username'),
