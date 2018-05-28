@@ -52,6 +52,14 @@ export class LoginPage {
 
   forgetPassword(){
     this.fire.auth.sendPasswordResetEmail(this.username.value)
+      .then(data => {
+        console.log('y a des data', this.fire.auth.currentUser);
+        this.alert('Message envoyé');
+      })
+      .catch(error => {
+        console.log('Mettre un email', error);
+        this.alert(error.message);
+      });
     console.log(this.username.value);
   }
 

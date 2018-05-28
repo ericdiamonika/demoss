@@ -23,6 +23,7 @@ export class GoogleMapComponent {
     this.geolocation.getCurrentPosition().then((position) => {
 
       let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      console.log(latLng);
       let mapOptions = {
 
         center: latLng,
@@ -35,6 +36,18 @@ export class GoogleMapComponent {
     },(err) => {
       console.log(err);
     });
+  }
+
+  addM(){
+    let marker = new google.maps.Market({
+      map: this.map,
+      animation: google.maps.Animation.DROP,
+      position: this.map.getCenter()
+    });
+
+    let content = "<h4>Vous êtes ici</h4>";
+
+    this.addInfoWindow(marker, content);
   }
 
   addMarker(){
@@ -58,5 +71,4 @@ export class GoogleMapComponent {
       infoWindow.open(this.map, marker);
     })
   }
-
 }
