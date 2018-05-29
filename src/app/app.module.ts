@@ -27,9 +27,9 @@ import { CallNumber } from '@ionic-native/call-number';
 import {WelcomePage} from "../pages/welcome/welcome";
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
-const firebaseAuth = {
+export const firebaseAuth = {
   apiKey: "AIzaSyAUc0s4FUFpYVamlGKJPYosM0aLWdNaz_M",
-    authDomain: "demoss-96939.firebaseapp.com",
+  authDomain: "demoss-96939.firebaseapp.com",
   databaseURL: "https://demoss-96939.firebaseio.com",
   projectId: "demoss-96939",
   storageBucket: "demoss-96939.appspot.com",

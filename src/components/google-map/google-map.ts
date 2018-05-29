@@ -32,22 +32,27 @@ export class GoogleMapComponent {
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
 
-       this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+      this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
     },(err) => {
       console.log(err);
     });
   }
 
-  addM(){
-    let marker = new google.maps.Market({
-      map: this.map,
-      animation: google.maps.Animation.DROP,
-      position: this.map.getCenter()
-    });
+  async addM() {
+    try {
+      let marker = new google.maps.Market({
+        map: this.map,
+        animation: google.maps.Animation.DROP,
+        position: this.map.getCenter()
+      });
 
-    let content = "<h4>Vous êtes ici</h4>";
+      let content = "<h4>Vous êtes ici</h4>";
 
-    this.addInfoWindow(marker, content);
+      this.addInfoWindow(marker, content);
+    }
+    catch (e) {
+      console.error(e);
+    }
   }
 
   addMarker(){
