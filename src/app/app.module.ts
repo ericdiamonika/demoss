@@ -22,6 +22,7 @@ import {GoogleMapComponent} from "../components/google-map/google-map";
 import { GooglemapPage} from "../pages/googlemap/googlemap";
 import { Geolocation } from '@ionic-native/geolocation';
 
+
 import {Contacts} from "@ionic-native/contacts";
 import { CallNumber } from '@ionic-native/call-number';
 import {WelcomePage} from "../pages/welcome/welcome";

@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { AngularFireStorageModule } from 'angularfire2/storage';
-import {storage,initializeApp} from "firebase";
-import {  firebaseAuth } from "../../app/app.module";
 
 /**
  * Generated class for the CameraPage page.
@@ -20,15 +18,15 @@ import {  firebaseAuth } from "../../app/app.module";
 export class CameraPage {
 
   myphoto: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera, private fire: AngularFireStorageModule) {initializeApp(firebaseAuth)}
+  constructor(public navCtrl: NavController, public navParams: NavParams, private camera: Camera) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CameraPage');
   }
 
-  async takePicture() {
+   takePicture() {
 
-    try {
+
 
       const options: CameraOptions = {
         quality: 70,
@@ -39,23 +37,13 @@ export class CameraPage {
         mediaType: this.camera.MediaType.PICTURE
       }
 
-      /*this.camera.getPicture(options).then((imageData) => {
+      this.camera.getPicture(options).then((imageData) => {
         // imageData is either a base64 encoded string or a file URI
         // If it's base64:
         this.myphoto = 'data:image/jpeg;base64,' + imageData;
       }, (err) => {
         // Handle error
-      });*/
-
-      const result = await this.camera.getPicture(options);
-      const image = `data:image/jpeg;base64,${result}`;
-      const pictures = storage().ref('picturesAres/img');
-
-      pictures.putString(image, 'data_url')
-    }
-    catch  (e) {
-      console.error(e);
-    }
+      });
 
   }
 
