@@ -87,14 +87,13 @@ export class ContactsPage {
     this.contactsService.pickContact()
       .then((response: Contact) => {
         this.numbers = response.phoneNumbers[0].value;
-        this.callNumberFn(response.phoneNumbers[0].value)
       });
   }
 
-  callNumberFn(number) {
-    this.callNumber.callNumber(number, true)
-      .then(res => console.log('Launched dialer!', res))
-      .catch(err => console.log('Error launching dialer', err));
+  callNumberFn(n:string) {
+    this.callNumber.callNumber(n, true)
+      .then(() => console.log('Launched dialer!'))
+      .catch(() => console.log('Error launching dialer'));
   }
 
 
