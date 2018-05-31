@@ -136,6 +136,11 @@
 		4150DC44571A481FBE19B8A1 /* pgm_Localizable_pl.json in Resources */ = {isa = PBXBuildFile; fileRef = 66261EBF98DE4EFB8B40B23E /* pgm_Localizable_pl.json */; };
 		7F41523DD99F4F6EBB51D11C /* pgm_Localizable_da.json in Resources */ = {isa = PBXBuildFile; fileRef = 93C80A2F01BD45FAA5AFB150 /* pgm_Localizable_da.json */; };
 		01C2B5B14F4741428B70D523 /* pgm_Localizable_vi.json in Resources */ = {isa = PBXBuildFile; fileRef = C65864A9BB4C4FB4B9BFE04D /* pgm_Localizable_vi.json */; };
+		376996A9E326402182BF1400 /* CFCallNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 37211971606E488D801002AF /* CFCallNumber.m */; };
+		B36BA339A92F4783AA3EA8BA /* CDVContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C611F39F5D4D7BA5AFBBD6 /* CDVContacts.m */; };
+		C3979D5FA60B45E2A1817BF9 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F1169D2F8C79425A8067FAAC /* CDVContact.m */; };
+		20CC2B3CA9D14317B7E828C8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7066A1408F2F4CE2B5A66ECC /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C2607762699A4137A1662CCC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F26555FE8744698AA8CCD5 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -401,6 +406,14 @@
 		66261EBF98DE4EFB8B40B23E /* pgm_Localizable_pl.json */ = {isa = PBXFileReference; name = "pgm_Localizable_pl.json"; path = "pgm_Localizable_pl.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		93C80A2F01BD45FAA5AFB150 /* pgm_Localizable_da.json */ = {isa = PBXFileReference; name = "pgm_Localizable_da.json"; path = "pgm_Localizable_da.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C65864A9BB4C4FB4B9BFE04D /* pgm_Localizable_vi.json */ = {isa = PBXFileReference; name = "pgm_Localizable_vi.json"; path = "pgm_Localizable_vi.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		37211971606E488D801002AF /* CFCallNumber.m */ = {isa = PBXFileReference; name = "CFCallNumber.m"; path = "call-number/CFCallNumber.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		EA1B1091E5AA48CFB971DB02 /* CFCallNumber.h */ = {isa = PBXFileReference; name = "CFCallNumber.h"; path = "call-number/CFCallNumber.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E1C611F39F5D4D7BA5AFBBD6 /* CDVContacts.m */ = {isa = PBXFileReference; name = "CDVContacts.m"; path = "cordova-plugin-contacts/CDVContacts.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F1169D2F8C79425A8067FAAC /* CDVContact.m */ = {isa = PBXFileReference; name = "CDVContact.m"; path = "cordova-plugin-contacts/CDVContact.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		40B2103C28AB4906991D8F83 /* CDVContacts.h */ = {isa = PBXFileReference; name = "CDVContacts.h"; path = "cordova-plugin-contacts/CDVContacts.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5D797CDBAFB64DAA88FDF546 /* CDVContact.h */ = {isa = PBXFileReference; name = "CDVContact.h"; path = "cordova-plugin-contacts/CDVContact.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7066A1408F2F4CE2B5A66ECC /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		C8F26555FE8744698AA8CCD5 /* AddressBookUI.framework */ = {isa = PBXFileReference; name = "AddressBookUI.framework"; path = "System/Library/Frameworks/AddressBookUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +441,8 @@
 				9136C24CB80E45E196B6B302 /* GoogleMapsBase.framework in Frameworks */,
 				98E1E7294CBA4710B5455053 /* GoogleMaps.framework in Frameworks */,
 				C8FC8085223B4B23A5B52587 /* GoogleMapsCore.framework in Frameworks */,
+				20CC2B3CA9D14317B7E828C8 /* AddressBook.framework in Frameworks */,
+				C2607762699A4137A1662CCC /* AddressBookUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +546,8 @@
 				D07A83166C964748821A7351 /* GoogleMapsBase.framework */,
 				0E1D67C39DFC449A8878D00B /* GoogleMaps.framework */,
 				59DFE1CA3CBE42FD89ADB4BD /* GoogleMapsCore.framework */,
+				7066A1408F2F4CE2B5A66ECC /* AddressBook.framework */,
+				C8F26555FE8744698AA8CCD5 /* AddressBookUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -742,6 +759,12 @@
 				BFDD2AAD3BB6416BA6B90F0D /* PluginViewController.h */,
 				B684A45614294D38986C93BC /* IPluginView.h */,
 				8E63DB9469264D67B80EFD2F /* IPluginProtocol.h */,
+				37211971606E488D801002AF /* CFCallNumber.m */,
+				EA1B1091E5AA48CFB971DB02 /* CFCallNumber.h */,
+				E1C611F39F5D4D7BA5AFBBD6 /* CDVContacts.m */,
+				F1169D2F8C79425A8067FAAC /* CDVContact.m */,
+				40B2103C28AB4906991D8F83 /* CDVContacts.h */,
+				5D797CDBAFB64DAA88FDF546 /* CDVContact.h */,
 			);
 			name = Plugins;
 			path = demoss/Plugins;
@@ -973,6 +996,9 @@
 				3D3661F13A3549AF94A72E27 /* PluginStreetViewPanorama.m in Sources */,
 				2428B58EB7B549FC80CC994E /* PluginStreetViewPanoramaController.m in Sources */,
 				4E7157FA2C8F40B596E27B1F /* PluginViewController.m in Sources */,
+				376996A9E326402182BF1400 /* CFCallNumber.m in Sources */,
+				B36BA339A92F4783AA3EA8BA /* CDVContacts.m in Sources */,
+				C3979D5FA60B45E2A1817BF9 /* CDVContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

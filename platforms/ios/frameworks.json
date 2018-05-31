@@ -14,5 +14,7 @@
     "OpenGLES.framework": 1,
     "QuartzCore.framework": 1,
     "SystemConfiguration.framework": 1,
-    "UIKit.framework": 1
+    "UIKit.framework": 1,
+    "AddressBook.framework": 1,
+    "AddressBookUI.framework": 1
 }

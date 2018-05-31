@@ -42,6 +42,12 @@
     },
     "cordova-plugin-googlemaps": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "call-number": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {}
