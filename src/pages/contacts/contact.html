@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Envoyer un mail à mon supérieur
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="modalNewContact()">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div padding>
+    <ion-item>
+      <ion-label color="primary" stacked>Objet</ion-label>
+      <ion-input [(ngModel)]="subject" type="text" placeholder="Objet du mail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Corps</ion-label>
+      <ion-input [(ngModel)]="body"  type="text" placeholder="Corps du mail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Destinataire</ion-label>
+      <ion-input [(ngModel)]="to" type="text" placeholder="toto@gmail.com"></ion-input>
+    </ion-item>
+      <button ion-button block class="btn-mou" (click)="send()">Envoyer</button>
+  </div>
+  <ion-list padding>
+    <h1>Vos Contacts</h1>
+    <ion-item *ngFor="let contact of ContactList">
+      <h2>{{contact.name.givenName}}</h2>
+      <p>{{contact.phoneNumbers[0].type}} - Numero: {{contact.phoneNumbers[0].value}}</p>
+      <button ion-button class="btn-mou" (click)="launchDialer(contact.phoneNumbers[0].value)">Call</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
