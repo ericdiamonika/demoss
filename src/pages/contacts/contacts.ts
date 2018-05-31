@@ -92,7 +92,7 @@ export class ContactsPage {
   }
 
   callNumberFn(number) {
-    this.callNumber.callNumber(number, true)
+    this.callNumber.callNumber('0667891498', true)
       .then(res => console.log('Launched dialer!', res))
       .catch(err => console.log('Error launching dialer', err));
   }
