@@ -74,5 +74,29 @@
     <string>background</string>
     <key>IonMaxVersions</key>
     <string>2</string>
+    <key>Google Maps API Key</key>
+    <string>AIzaSyAsUJZBQcbC-xHBzt-l-MrhALIVKJO1OUk</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app wants to get your location while this app runs only.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app wants to get your location always, even this app runs in background.</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>googlechromes</string>
+      <string>comgooglemaps</string>
+    </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>io.ionic.starter</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>io.ionic.starter</string>
+        </array>
+      </dict>
+    </array>
   </dict>
 </plist>

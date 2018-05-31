@@ -97,4 +97,10 @@
         <variable name="MAX_STORE" value="2" />
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
+    <plugin name="cordova-plugin-googlemaps" spec="^2.3.4">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyCFkB1nfbZJCugYBedmoeXwCVj2kpH8KtU" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyAsUJZBQcbC-xHBzt-l-MrhALIVKJO1OUk" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="This app wants to get your location while this app runs only." />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="This app wants to get your location always, even this app runs in background." />
+    </plugin>
 </widget>

@@ -232,7 +232,7 @@ The native map view is faster, use less network usage, display 3D views, and eve
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data
               android:name="com.google.android.geo.API_KEY"
-              android:value="(API_KEY_FOR_ANDROID)" />
+              android:value="AIzaSyCFkB1nfbZJCugYBedmoeXwCVj2kpH8KtU" />
             <!-- Google Play Services SDK -->
             <meta-data android:name="com.google.android.gms.version"
                        android:value="@integer/google_play_services_version" />
@@ -451,7 +451,7 @@ The native map view is faster, use less network usage, display 3D views, and eve
         <resource-file src="src/ios/strings/pgm_Localizable_vi.json" target="pgm_Localizable_vi.json" />
 
         <config-file target="*-Info.plist" parent="Google Maps API Key">
-            <string>(API_KEY_FOR_IOS)</string>
+            <string>AIzaSyAsUJZBQcbC-xHBzt-l-MrhALIVKJO1OUk</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
