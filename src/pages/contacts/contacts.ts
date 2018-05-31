@@ -17,9 +17,6 @@ import { CallNumber } from '@ionic-native/call-number';
 })
 export class ContactsPage {
 
-  error:string;
-  contacts:Contact[]=[];
-  numbers:any;
 
   constructor(public navCtrl: NavController,
               private contactsService: Contacts,
@@ -86,13 +83,13 @@ export class ContactsPage {
   openContact() {
     this.contactsService.pickContact()
       .then((response: Contact) => {
-        this.numbers = response.phoneNumbers[0].value;
+        /*this.numbers = response.phoneNumbers[0].value;*/
         this.callNumberFn(response.phoneNumbers[0].value)
       });
   }
 
   callNumberFn(number) {
-    this.callNumber.callNumber('0667891498', true)
+    this.callNumber.callNumber(number, true)
       .then(res => console.log('Launched dialer!', res))
       .catch(err => console.log('Error launching dialer', err));
   }
