@@ -18,15 +18,8 @@
   <p>Contacts: {{numbers|json}}</p>
 
 
-  <ion-item *ngFor="let contact of ContactList">
-    <h2>{{contact.name.givenName}}</h2>
-    <p>{{contact.phoneNumbers[0].type}} - Numero: {{contact.phoneNumbers[0].value}}</p>
-    <button ion-button (click)="callNumberFn(response.phoneNumbers[0].value)">Appeler contact</button>
-  </ion-item>
-
-
-
+  <div padding>
+    <button block ion-button (click)="callNumberFn(numbers)">Appeler contact</button>
+  </div>
 </ion-content>
-
-
 java -version
